@@ -37,3 +37,11 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #2563eb;
 }
+
+/* Utility to smoothly transition theme colors */
+.theme-transition,
+.theme-transition * {
+  transition-property: background-color, color, border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
