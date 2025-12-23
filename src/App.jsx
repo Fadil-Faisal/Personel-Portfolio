@@ -20,8 +20,8 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
-      <nav className={`fixed w-full top-0 z-30 transition-colors ${scrolled ? (darkMode ? 'bg-gray-800 bg-opacity-80' : 'bg-white shadow-md') : 'bg-transparent'}`}>
+    <div className={`min-h-screen theme-transition ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+      <nav className={`fixed w-full top-0 z-30 theme-transition transition-colors ${scrolled ? (darkMode ? 'bg-gray-800 bg-opacity-80' : 'bg-white shadow-md') : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-4">
@@ -54,7 +54,7 @@ function App() {
         </div>
 
         {mobileMenuOpen && (
-          <div className={`md:hidden px-4 pb-4 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
+          <div className={`md:hidden px-4 pb-4 theme-transition ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
             {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
               <button
                 key={item}
@@ -68,7 +68,7 @@ function App() {
         )}
       </nav>
 
-      <main className="pt-20">
+      <main className="pt-20 theme-transition">
         {currentPage === 'home' && <HomePage navigateTo={navigateTo} darkMode={darkMode} />}
         {currentPage === 'about' && <AboutPage darkMode={darkMode} />}
         {currentPage === 'projects' && <ProjectsPage darkMode={darkMode} />}
