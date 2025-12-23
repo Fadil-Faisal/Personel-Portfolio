@@ -27,9 +27,9 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <button 
               onClick={() => navigateTo('home')}
-              className="text-2xl font-bold text-blue-500 hover:text-blue-400"
+              className="text-2xl font-bold text-blue-500 hover:text-blue-400 font-serif"
             >
-              Fadil Faisal
+              FF
             </button>
 
             <div className="hidden md:flex space-x-8">
@@ -182,7 +182,7 @@ function AboutPage() {
               Hello! I'm a third-year BCA student from Kerala, India, passionate about building innovative applications that solve real-world problems. My journey in tech started with curiosity and has evolved into a deep commitment to crafting exceptional digital experiences.
             </p>
             <p className="text-lg leading-relaxed">
-              Specializing in Flutter and full-stack development, I've honed my skills across mobile and web platforms. From creating the Kerala Bike Rental app to exploring AI-powered emotion detection systems, I love pushing boundaries and learning new technologies.
+              Specializing in Flutter and full-stack development, I've honed my skills across mobile and web platforms. From creating the Kerala Bike Rental app to Creating a Video Teaching Platform, I love pushing boundaries and learning new technologies.
             </p>
             <p className="text-lg leading-relaxed">
               Beyond coding, I'm fascinated by stock trading and financial markets, constantly seeking to understand how technology intersects with finance.
@@ -194,7 +194,7 @@ function AboutPage() {
           <h3 className="text-3xl font-bold text-white mb-8 text-center">Education Journey</h3>
           <div className="max-w-3xl mx-auto space-y-6">
             {[
-              { year: '2023 - Present', title: 'Bachelor of Computer Applications', institution: 'Your University, Kerala', status: 'Third Year' },
+              { year: '2023 - Present', title: 'Bachelor of Computer Applications', institution: 'Yenepoya University, Banglore', status: 'Third Year' },
               { year: '2021 - 2023', title: 'Higher Secondary Education', institution: 'IGPS, Kerala', status: 'Completed' }
             ].map((edu, idx) => (
               <div key={idx} className="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500">
@@ -253,13 +253,13 @@ function ProjectsPage() {
     },
     {
       id: 2,
-      title: 'AI Emotion Detection',
-      description: 'Machine learning model that detects emotions from facial expressions using computer vision.',
-      tech: ['Python', 'TensorFlow', 'OpenCV', 'Flask'],
+      title: 'Video Teaching Platform',
+      description: 'Created a full-stack web application for online video teaching where students (Users) can pay teachers to schedule and conduct one-on-one video teaching sessions.',
+      tech: ['React', 'Flutter', 'Node.js', 'django', 'MySQL'],
       image: '🤖',
       github: 'https://github.com/yourusername/emotion-detection',
       live: null,
-      features: ['Real-time detection', '7 emotion categories', '92% accuracy', 'REST API']
+      features: ['Real-Time Video Call', 'Pay As They Teach', 'INNOVATIVE', 'REST API']
     },
     {
       id: 3,
@@ -609,8 +609,8 @@ function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-blue-400">
-                      your.email@example.com
+                    <a href="mailto:fadilfaisalk@gmail.com" className="text-gray-400 hover:text-blue-400">
+                      fadilfaisalk@gmail.com
                     </a>
                   </div>
                 </div>
@@ -621,7 +621,7 @@ function ContactPage() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Location</h4>
-                    <p className="text-gray-400">Kerala, India</p>
+                    <p className="text-gray-400">Thalassery, Kerala, India</p>
                   </div>
                 </div>
               </div>
@@ -632,7 +632,7 @@ function ContactPage() {
               
            <div className="flex gap-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/Fadil-Faisal"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-gray-700 text-white rounded-lg hover:bg-gray-600"
@@ -706,7 +706,7 @@ function Footer() {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-3 bg-gray-700 rounded-lg hover:bg-gray-600">
                 <Linkedin className="text-white" size={24} />
               </a>
-              <a href="mailto:your.email@example.com" className="p-3 bg-gray-700 rounded-lg hover:bg-gray-600">
+              <a href="mailto:fadilfaisalk@gmail.com" className="p-3 bg-gray-700 rounded-lg hover:bg-gray-600">
                 <Mail className="text-white" size={24} />
               </a>
             </div>
@@ -715,7 +715,7 @@ function Footer() {
 
         <div className="pt-8 border-t border-gray-700 text-center">
           <p className="text-gray-400">
-            © 2024 Fadil Faisal. Built with React & Tailwind CSS. All rights reserved.
+            © 2026 Fadil Faisal. All rights reserved.
           </p>
         </div>
       </div>
